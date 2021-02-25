@@ -150,7 +150,7 @@ export default {
       const isValidated = await this.$refs.form.validate()
 
       if (isValidated) {
-        const valuesFormatted = JSON.parse(JSON.stringify(this.formValues))
+        const valuesFormatted = this.formValues
 
         this.emitValues({
           formName: this.formName,
